@@ -60,7 +60,7 @@ On vérifie que c'est correctement chargé
 list(by_countries.keys())[0:4]
 ```
 
-#### Manipulation pour structurer les données correctements
+#### Manipulation pour structurer les données correctement
 
 ```python
 data = []
@@ -72,18 +72,18 @@ df = pd.DataFrame(data)
 
 #### On vérifie que les données sont correctement structurées
 
-On utile `.info` `.head` `.describe` `.dtypes` etc.
+On utilies `.info` `.head` `.describe` `.dtypes` etc.
 
 Est-ce qu'il n'y a pas un problème de type ? Comment le régler (indice chez vous, `.to_<nouveau_type>...`)
 
 ### Étape 2 : On s'intéresse à la France
 
 1. Comment filtrer les données françaises dans un DataFrame `df_france` ?
-2. On peut faire de jolie graphe sur le nombre de mort en france
+2. On peut faire de jolis graphes sur le nombre de mort en france
 
 ### Etape 3 : Nombre de morts par jour/semaine/mois en france
 
-1. On pense à bien ordonné les colonnes par date
+1. On pense à bien ordonner les colonnes par date
 2. On regarde la doc de `df.diff` et on en déduit comment connaitre le nombre de mort d'un jour sur l'autre
 3. On créer des nouvelles colonnes 'deaths_by_day' et 'deaths_by_week'
 4. On fait des **beaux** graphes avec ces données
